@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/assets/logo-icon.svg">
+    <title>Tic Tac Toe</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="start-menu">
+            <div id="game-logo">
+                <img src="./img/assets/logo.svg">
+            </div>
+            <div id="choose-icon-box">
+                <p>PICK PLAYER 1'S MARK</p>
+                <div id="select-icon">
+                    <div class="select-x-or-o" id="select-x">
+                        <img src="./img/assets/x.svg">
+                    </div>
+                    <div class="select-x-or-o" id="select-o">
+                        <img src="./img/assets/o.svg">
+                    </div>
+                    <div id="selection-bar" class="move-selection-bar-left">
+                    </div>
+                </div>
+                <p id="reminder">REMEMBER: X GOES FIRST</p>
+            </div>
+            <div class="button-box">
+                <button class="versus-button" id="versus-cpu">NEW GAME (VS CPU)</button>
+            </div>
+            <div class="button-box">
+                <button class="versus-button" id="versus-player">NEW GAME (VS PLAYER)</button>
+            </div>
+        </div>
+        <div id="board">
+            <div class="top-informations" id="game-icons">
+                <img src="./img/assets/logo.svg" alt="X icon">
+            </div>
+            <div class="top-informations" id="turn">
+                <img id="img-game-icons" src="./img/assets/x.svg" alt="X icon"> <small>TURN</small>
+            </div>
+            <div class="top-informations" id="reset-game">
+            <button>
+                <img src="./img/assets/icon-restart.svg">
+            </button>
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="space">
+            </div>
+            <div class="score" id="player-1">
+               <small class="score-text">X (YOU)</small><small class="score-points">14</small>
+            </div>
+            <div class="score" id="ties">
+                <small class="score-text">TIES</small><small class="score-points">32</small>
+            </div>
+            <div class="score" id="player-2">
+                <small class="score-text">O (CPU)</small><small class="score-points">11</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
