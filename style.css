@@ -3,6 +3,7 @@ body{
     padding: 0;
 }
 
+
 #container{
     height: 100vh;
     background-color: #10212a;
@@ -30,6 +31,7 @@ body{
 }
 
 .space{
+    --url:url(./img/assets/icon-x-outline.svg);
     background-color: #1f3641;
     border-radius: 10%;
     width: calc(60vmin / 3 - 15px);
@@ -40,7 +42,7 @@ body{
 }
 
 .space:hover{
-    background-image: url(./img/assets/icon-x-outline.svg);
+    background-image: var(--url);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 70px;
@@ -276,7 +278,7 @@ body{
     width: calc(50% - 10px);
     background-color: #afafaf;
     border-radius: 10px;
-    transition:left 1s linear;
+    transition:left 0.3s linear;
 }
 
 .move-selection-bar-left{
