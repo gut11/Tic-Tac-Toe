@@ -22,10 +22,10 @@
                 <p>PICK PLAYER 1'S MARK</p>
                 <div id="select-icon">
                     <div class="select-x-or-o" id="select-x">
-                        <img src="./img/assets/x-menu.svg">
+                        <img src="./img/assets/x-menu.svg" alt="play with X">
                     </div>
                     <div class="select-x-or-o" id="select-o">
-                        <img src="./img/assets/o-dark.svg">
+                        <img src="./img/assets/o-dark.svg" alt="play with O">
                     </div>
                     <div id="selection-bar" class="move-selection-bar-right">
                     </div>
@@ -36,7 +36,7 @@
                 <button class="versus-button" id="versus-cpu">NEW GAME (VS CPU)</button>
             </div>
             <div class="button-box">
-                <button class="versus-button" id="versus-player">NEW GAME (VS PLAYER)</button>
+                <button class="versus-button" id="versus-player">NEW GAME (VS PLAYER LOCAL)</button>
             </div>
         </div>
         <div id="board">
@@ -44,7 +44,7 @@
                 <img src="./img/assets/logo.svg" alt="X icon">
             </div>
             <div class="top-informations" id="turn">
-                <img id="img-game-icons" src="./img/assets/x-menu.svg" alt="X icon"> <small>TURN</small>
+                <img id="img-game-icons" src="./img/assets/x-menu.svg" alt="Turn icon"> <small>TURN</small>
             </div>
             <div class="top-informations" id="reset-game">
             <button>
@@ -70,13 +70,43 @@
             <div class="space">
             </div>
             <div class="score" id="player-1">
-               <small class="score-text">X (YOU)</small><small class="score-points">0</small>
+               <small class="score-text" id="player-1-score">X (YOU)</small><small class="score-points" id="player-1-score-points">0</small>
             </div>
             <div class="score" id="ties">
-                <small class="score-text">TIES</small><small class="score-points">0</small>
+                <small class="score-text">TIES</small><small class="score-points" id="draw-counter">0</small>
             </div>
             <div class="score" id="player-2">
-                <small class="score-text">O (CPU)</small><small class="score-points">0</small>
+                <small class="score-text" id="player-2-score">O (CPU)</small><small class="score-points" id="player-2-score-points">0</small>
+            </div>
+        </div>
+        <div id="restart-screen-container" class="pop-up-screen-styles">
+            <div class="pop-up-area">
+                <div id="restart-content-container" class="pop-up-content-conteiner-style">
+                    <div id="restart-text">
+                        <span>RESTART MENU</span>
+                    </div>
+                    <div id="restart-buttons-box">
+                    <button id="cancel-button" class="versus-button restart-buttons">CANCEL</button>
+                    <button id="restart-back-menu" class="versus-button restart-buttons">BACK TO MENU</button>
+                    <button id="reset-game-button" class="versus-button restart-buttons">RESET GAME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="end-game-screen" class="pop-up-screen-styles">
+            <div id="end-game-menu-space" class="pop-up-area">
+                <div id="content-container" class="pop-up-content-conteiner-style">
+                    <div id="text-player-won">
+                        <span id="end-game-top-text"><span class="player-symbol-color" id="winner-player-number"></span></span>
+                    </div>
+                    <div id="symbol-won-round-container">
+                        <img id="symbol-won-round" src="./img/assets/icon-o.svg"> <span class="player-symbol-color" id="takes-round">Takes the round</span>
+                    </div>
+                    <div id="end-game-buttons-box">
+                    <button id="back-menu-button" class="versus-button">BACK TO MENU</button>
+                    <button id="next-round-button" class="versus-button">NEXT ROUND</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
